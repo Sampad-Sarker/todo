@@ -139,6 +139,7 @@ ul li:hover {
 </style>
 
 <script>
+/* eslint-disable */
 export default {
   name: "TaskList",
   props: ["getTask"],
@@ -151,10 +152,10 @@ export default {
   methods: {
     strikeText(index) {
       [this.taskList] = [this.getTask];
-      console.log("before taskList in tasklist:", this.taskList);
+      // console.log("before taskList in tasklist:", this.taskList);
 
       this.taskList[index].doneTask = !this.taskList[index].doneTask;
-      console.log("After taskList in tasklist:", this.taskList);
+      // console.log("After taskList in tasklist:", this.taskList);
     },
     deleteTask(taskIndex) {
       [this.taskList] = [this.getTask];

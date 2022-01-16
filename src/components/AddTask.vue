@@ -67,6 +67,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 // import TaskList from "../src/components/TaskList.vue";
 export default {
   name: "AddTask",
@@ -91,8 +92,8 @@ export default {
         alert("set task's priority");
       }
 
-      console.log("clicked");
-      console.log(this.taskName);
+      // console.log("clicked");
+      // console.log(this.taskName);
 
       // this.taskNameWithPriority.push({
       //   id: this.taskNameWithPriority.length + 1,
@@ -140,8 +141,8 @@ export default {
         });
       }
 
-      console.log("taskList", this.taskList);
-      console.log("priority in addTask", this.taskNameWithPriority);
+      // console.log("taskList", this.taskList);
+      // console.log("priority in addTask", this.taskNameWithPriority);
 
       this.$emit("taskWithPriority", this.taskNameWithPriority);
 
